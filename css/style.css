@@ -109,6 +109,7 @@ display: flex;
     margin-left: auto ;
 }
 .item-nav-icon{
+    fill: currentColor;
    
 }
 .aut-nav .item-nav + .item-nav{
@@ -136,7 +137,8 @@ fill: currentColor;
 .aut-nav :focus{
     color: var(--accent-text-color)
 }
-.aut-nav :hover,:focus .contact-link{
+.aut-nav :hover,
+:focus .contact-link {
 fill: var(--accent-text-color)
 }
 
@@ -190,13 +192,12 @@ fill: var(--accent-text-color)
 
 .qualiti-link {
     width: 100%;
-    height: 92px;
-    border: 1px solid var(--icon);
+    height: 120px;
+    background-color: var(--button);
     display: flex;
     border-radius: 4px;
     align-items: center;
     justify-content: center;
-    background-color: var(--hero-text-color);
     color: var(--icon);
 
 }
@@ -285,9 +286,7 @@ fill: var(--accent-text-color)
     }
 
 .conteiner-card{
-    padding-left: 32px;
-    padding-right: 22px;
-    
+     margin-top: 0px;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
         background-color: var(--hero-text-color);
@@ -305,6 +304,7 @@ fill: var(--accent-text-color)
         line-height: 1.2;
         letter-spacing: 0.03em;
         text-align: center;
+        padding-top: 30px;
         
 }
 .team-text {
@@ -314,14 +314,14 @@ fill: var(--accent-text-color)
         letter-spacing: 0.03em;
         text-align: center;
         margin-top: 10px;
-        margin-bottom: 0px;
+        margin-bottom: 16px;
 }
 .soc-list{
     display: flex;
     justify-content: center;
-    padding-top: 16px;
+    margin-top: 16px;
     padding-bottom: 30px;
-    
+    gap: 10px;
 
 }
 .soc-item {
@@ -336,15 +336,14 @@ fill: var(--accent-text-color)
     background-color:var(--hero-text-color);
     border-radius: 50%;
     color:var(--icon);
-    margin-right: 10px;
+   
+}
+
+.soc-icon{
+    gap: 10px;
 }
 
 
-/* чомусь не працює !!!
-.soc-link :last-child {
- margin-right: 0px;
-}
-*/
 .soc-icon{
     fill: currentColor;
 }
@@ -391,6 +390,11 @@ background-color: var(--accent-text-color);
 
 .partners-item {
     width: calc((100%-150px)/6);
+    width: 100%;
+        height: 92px;
+       
+        display: flex;
+        border-radius: 4px;
 }
 
 .partners-link {
@@ -412,8 +416,8 @@ background-color: var(--accent-text-color);
 
 .partners-link:hover,
 .partners-link:focus {
-    background-color: var(--accent-text-color);
-    color: var(--hero-text-color);
+   border-color: var(--accent-text-color);
+    color: var(--accent-text-color);
 }
 
 
@@ -497,6 +501,7 @@ display: flex;
 justify-content: center;
 padding-top: 16px;
  padding-bottom: 30px;
+gap: 10px;
     }
     
 .social-item {}
@@ -510,7 +515,7 @@ justify-content: center;
 background-color: var(--footer-link);
 border-radius: 50%;
 color: var(--hero-text-color);
-margin-right: 10px;
+
         }
 .social-icon {
 fill: currentColor;
@@ -548,6 +553,11 @@ background-color: var(--accent-text-color);
     margin-bottom: 50px;
 }
 /* приклади робіт*/
+.progect-card{
+display: block;
+}
+  
+
 .progects-list{
     display: flex;
     flex-wrap: wrap;
@@ -568,9 +578,6 @@ background-color: var(--accent-text-color);
        
         border: 1px solid var(--secondary-button);
     }
-
-
-
 .projects-title{
         font-weight: 700;
         font-size: 18px;
@@ -580,9 +587,6 @@ background-color: var(--accent-text-color);
         padding-bottom: 4px;
 
 }
-
-
-
 .projects-text{
         font-size: 16px;
         line-height: 1.87;
@@ -590,11 +594,8 @@ background-color: var(--accent-text-color);
         color: var(--secondary-text-color);
         margin: 0px;
 }
-
-/*прідкажіть будь ласка
- як об'єднати щоб вона була однією карткою ? */
-.progect-card :hover,
-.progect-card :focus {
+.progect-card:hover,
+.progect-card:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16),
 0px 4px 4px rgba(0, 0, 0, 0.06),
 0px 1px 1px rgba(0, 0, 0, 0.12)
